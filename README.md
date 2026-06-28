@@ -1,0 +1,1 @@
+# FaqCStore-custom-template
