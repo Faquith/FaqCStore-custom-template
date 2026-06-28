@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>FAQC STORE</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jssor.slider.mini.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="jssor.slider.mini.js"></script>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          ><img src="assets/img/navbar-logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ml-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#legacy">Legacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+                        <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Product
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item js-scroll-trigger" href="#Product">Our Product</a>
+                    <a class="dropdown-item js-scroll-trigger" href="#BestProduct">Best Product</a>
+                    </div>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#partners">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Welcome To Our Store!</div>
+        <div class="masthead-heading text-uppercase">Let's build your dream gear!</div>
+        <a
+          class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+          href="#legacy"
+          >Tell Me More</a
+        >
+      </div>
+    </header>
+    <!-- Legacy-->
+    <section class="page-section" id="legacy" style="background-image: url('/gambar/BGwhite.jpg'); background-size: cover; background-position: center;">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase" font-weight="bold">Legacy</h2>
+          <h3 class="section-subheading text-muted">Our legendary store</h3>
+        </div>
+
+        <script>
+          jQuery(document).ready(function ($) {
+            var options = {
+              $AutoPlay: true, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+              $Idle: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+              $PauseOnHover: 1, //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+              $ArrowKeyNavigation: true, //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+              $SlideDuration: 800, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+              $MinDragOffsetToSlide: 20, //[Optional] Minimum drag offset to trigger slide , default value is 20
+              //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+              //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+              $SlideSpacing: 0, //[Optional] Space between each slide in pixels, default value is 0
+              $Cols: 1, //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+              $ParkingPosition: 0, //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+              $UISearchMode: 1, //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+              $PlayOrientation: 1, //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+              $DragOrientation: 1, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+
+              $ArrowNavigatorOptions: {
+                //[Optional] Options to specify and enable arrow navigator or not
+                $Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
+                $ChanceToShow: 1, //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 2, //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1, //[Optional] Steps to go for each navigation request, default value is 1
+              },
+
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
+                $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                $ActionMode: 1, //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                $AutoCenter: 0, //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
+                $Rows: 1, //[Optional] Specify lanes to arrange thumbnails, default value is 1
+                $SpacingX: 3, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                $SpacingY: 3, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                $Cols: 9, //[Optional] Number of pieces to display, default value is 1
+                $ParkingPosition: 260, //[Optional] The offset position to park thumbnail
+                $Orientation: 1, //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                $NoDrag: false, //[Optional] Disable drag or not, default value is false
+              },
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+              var bodyWidth = document.body.clientWidth;
+              if (bodyWidth)
+                jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1400));
+              else window.setTimeout(ScaleSlider, 20);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+          });
+        </script>
+        <div
+          style="
+            position: relative;
+            width: 100%;
+            background-color: #0b172e;
+            overflow: hidden;
+          "
+          class="mt-5"
+        >
+          <div
+            style="
+              position: relative;
+              left: 50%;
+              width: 5000px;
+              text-align: center;
+              margin-left: -2500px;
+            "
+          >
+            <!-- Jssor Slider Begin -->
+            <div
+              id="slider1_container"
+              style="
+                position: relative;
+                margin: 0 auto;
+                top: 0px;
+                left: 0px;
+                width: 980px;
+                height: 460px;
+                background: url(../img/major/main_bg.jpg) top center no-repeat;
+              "
+            >
+              <!-- Loading Screen -->
+              <div u="loading" style="position: absolute; top: 0px; left: 0px">
+                <div
+                  style="
+                    filter: alpha(opacity=70);
+                    opacity: 0.7;
+                    position: absolute;
+                    display: block;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    display: block;
+                    background: url(../img/loading.gif) no-repeat center center;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+              <!-- Slides Container -->
+              <div
+                u="slides"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  width: 980px;
+                  height: 460px;
+                  overflow: hidden;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >OUR JOURNEY BEGINS</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      Our Store started with a simple vision: to provide reliable technology products and honest service for everyone.
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    > What began as a small  idea soon became the <br> foundation of something bigger.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/siji.webp"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/siji.webp" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >STARTING FROM SMALL</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      In the early days, our store was modest, with limited products and resources.
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                     Despite the challenges, our commitment to quality and customer satisfaction never changed.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/loro.webp"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/loro.webp" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >Growth Phase</span
+                    >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      GROWING TOGETHER
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      With support from our customers, Our Computer store continued to grow. More products, better services, and stronger relationships helped us move forward.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/telu.jpg"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/telu.jpg" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >Expanding Products</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      EXPANDING OUR COLLECTION
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      Over time, we expanded our product lineup from basic computer equipment to modern laptops, gaming devices, accessories, and high-performance systems.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/papat.webp"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/papat.webp" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >Building Trust</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      EARNING CUSTOMER TRUST
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      Customer trust became our greatest strength. Through consistency, quality, and dependable support, we built lasting relationships with many loyal customers.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/limo.jpg"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/limo.jpg" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >Better Service</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      IMPROVING EVERY DAY
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      We continuously improved our services by providing better technical support, faster repairs, and more complete technology solutions for modern needs.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/enem.webp"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/enem.webp" />
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      width: 480px;
+                      height: 300px;
+                      top: 10px;
+                      left: 10px;
+                      text-align: left;
+                      line-height: 1.8em;
+                      font-size: 12px;
+                    "
+                  >
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        color: #ffffff;
+                      "
+                      >Today & Future</span
+                    >
+                    <br />
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      For The Great Generations
+                    </span>
+                    <br />
+                    <span
+                      style="
+                        display: block;
+                        line-height: 1.1em;
+                        font-size: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      Today, Our Computer Store stands as a trusted technology store. We continue moving forward, committed to innovation, service excellence, and helping customers achieve their digital goals.
+                    </span>
+                    <br />
+                  </div>
+                  <img
+                    src="/assets/slide/pitu.jpg"
+                    style="
+                      position: absolute;
+                      top: 23px;
+                      left: 480px;
+                      width: 500px;
+                      height: 350px;
+                    "
+                  />
+                  <img u="thumb" src="/assets/slide/pitu.jpg" />
+                </div>
+              </div>
+
+              <style>
+                /* jssor slider arrow navigator skin 07 css */
+                /*
+                    .jssora07l                  (normal)
+                    .jssora07r                  (normal)
+                    .jssora07l:hover            (normal mouseover)
+                    .jssora07r:hover            (normal mouseover)
+                    .jssora07l.jssora07ldn      (mousedown)
+                    .jssora07r.jssora07rdn      (mousedown)
+                    .jssora07l.jssora07lds      (disabled)
+                    .jssora07r.jssora07rds      (disabled)
+                    */
+                .jssora07l,
+                .jssora07r {
+                  display: block;
+                  position: absolute;
+                  /* size of arrow element */
+                  width: 50px;
+                  height: 50px;
+                  cursor: pointer;
+                  background: url(assets/a07.png) no-repeat;
+                  overflow: hidden;
+                }
+                .jssora07l {
+                  background-position: -5px -35px;
+                }
+                .jssora07r {
+                  background-position: -65px -35px;
+                }
+                .jssora07l:hover {
+                  background-position: -125px -35px;
+                }
+                .jssora07r:hover {
+                  background-position: -185px -35px;
+                }
+                .jssora07l.jssora07ldn {
+                  background-position: -245px -35px;
+                }
+                .jssora07r.jssora07rdn {
+                  background-position: -305px -35px;
+                }
+
+                .jssora07l.jssora07lds {
+                  background-position: -5px -35px;
+                  opacity: 0.3;
+                  pointer-events: none;
+                }
+                .jssora07r.jssora07rds {
+                  background-position: -65px -35px;
+                  opacity: 0.3;
+                  pointer-events: none;
+                }
+              </style>
+              <!-- Arrow Left -->
+              <span
+                u="arrowleft"
+                class="jssora07l"
+                style="top: 123px; left: 8px"
+              >
+              </span>
+              <!-- Arrow Right -->
+              <span
+                u="arrowright"
+                class="jssora07r"
+                style="top: 123px; right: 8px"
+              >
+              </span>
+              <!--#endregion Arrow Navigator Skin End -->
+
+              <!--#region Thumbnail Navigator Skin Begin -->
+              <!-- Help: http://www.jssor.com/help/thumbnail-navigator.html -->
+              <style>
+                /* jssor slider thumbnail navigator skin 04 css */
+                /*
+                .jssort04 .p            (normal)
+                .jssort04 .p:hover      (normal mouseover)
+                .jssort04 .pav          (active)
+                .jssort04 .pav:hover    (active mouseover)
+                .jssort04 .pdn          (mousedown)
+                */
+
+                .jssort04 {
+                  position: absolute;
+                  /* size of thumbnail navigator container */
+                  width: 600px;
+                  height: 60px;
+                }
+
+                .jssort04 .p {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 62px;
+                  height: 32px;
+                }
+
+                .jssort04 .t {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                }
+
+                .jssort04 .w,
+                .jssort04 .pav:hover .w {
+                  position: absolute;
+                  width: 60px;
+                  height: 30px;
+                  border: #0099ff 1px solid;
+                  box-sizing: content-box;
+                }
+
+                .jssort04 .pdn .w,
+                .jssort04 .pav .w {
+                  border-style: dashed;
+                }
+
+                .jssort04 .c {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 62px;
+                  height: 32px;
+                  background-color: #000;
+                  filter: alpha(opacity=45);
+                  opacity: 0.45;
+                  transition: opacity 0.6s;
+                  -moz-transition: opacity 0.6s;
+                  -webkit-transition: opacity 0.6s;
+                  -o-transition: opacity 0.6s;
+                }
+
+                .jssort04 .p:hover .c,
+                .jssort04 .pav .c {
+                  filter: alpha(opacity=0);
+                  opacity: 0;
+                }
+
+                .jssort04 .p:hover .c {
+                  transition: none;
+                  -moz-transition: none;
+                  -webkit-transition: none;
+                  -o-transition: none;
+                }
+
+                * html .jssort04 .w {
+                  width/**/: 62px;
+                  height/**/: 32px;
+                }
+              </style>
+              <!-- thumbnail navigator container -->
+              <div
+                u="thumbnavigator"
+                class="jssort04"
+                style="right: 0px; bottom: 0px"
+              >
+                <!-- Thumbnail Item Skin Begin -->
+                <div
+                  u="slides"
+                  style="bottom: 25px; right: 30px; cursor: default"
+                >
+                  <div u="prototype" class="p">
+                    <div class="w">
+                      <div u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                  </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
+              </div>
+              <!--#endregion Thumbnail Navigator Skin End -->
+              <a style="display: none" href="http://www.jssor.com"
+                >jQuery Slider</a
+              >
+            </div>
+            <!-- Jssor Slider End -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid-->
+
+      <section id="about" class="about" style="background-image: url('/gambar/BGDTR.webp'); background-size:contain; background-position: center;">
+      <div class="container" align="justify">   
+        <div class="row">
+          <div class="col pb-0" style="text-align: center">
+            <h1 style="font-family: Arial, sans-serif; font-weight: bold; color: #ffffff;">ABOUT US</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col font-family: Arial, sans-serif;" align="justify">
+            <p style="font-family: Arial, sans-serif; font-weight: bold; color: #ffffff;">
+              Founded with a passion for technology, FAQC STORE has grown into a reliable destination for computers and digital solutions. From quality products to dependable service, we continuously help customers find the right technology to meet their needs in today’s digital world.
+            </p>
+          </div>
+
+          <div class="col">
+            <p style="font-family: Arial, sans-serif; font-weight: bold; color: #ffffff;">
+              At FAQC STORE, we believe technology should be accessible, practical, and beneficial for everyone. That is why we are committed to providing trusted products, competitive prices, and excellent customer support while continuously adapting to the latest technological advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--Products-->
+    <section id="Product" class="Product"style="background-image: url('/gambar/Product/BGstore.jpg'); background-size:auto ; background-position: center; font-wheight: bold; color: #ffffff;">
+        <div class="container" ">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 style="background-color: #000000; color: white; padding: 10px;">OUR PRODUCTS</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="gambar/Product/setunggal.png" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white ">ASUS VivoBook 15</h5>
+                            <p class="card-text text-white">
+                               A lightweight and reliable laptop designed for daily productivity, online learning, office work, and multitasking with smooth performance.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 7.500.000</p>
+                            <a href="" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/loro.jpg" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Lenovo IdeaPad Slim 3</h5>
+                            <p class="card-text text-white">
+                               Slim and modern laptop with efficient performance, ideal for students and professionals who need portability and reliability
+                            </p>
+                            <p class="card-text text-white">Price: Rp 6.800.000</p>
+                            <a href="https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-slim-3" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/telu.png" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Acer Nitro V 15</h5>
+                            <p class="card-text text-white">
+                                A powerful gaming laptop featuring dedicated graphics and high-speed processing for gaming, editing, and demanding workloads.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 12.999.000</p>
+                            <a href="https://www.acer.com/us/en/laptops/acer-nitro-v-15" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/papat.png" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Logitech G102 Lightsync</h5>
+                            <p class="card-text text-white">
+                                A responsive gaming mouse with customizable RGB lighting and precise tracking for smooth gameplay.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 299.000</p>
+                            <a href="https://www.logitechg.com/en-us/products/gaming-mice/g102-lightsync-gaming-mouse.941-000174.html" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/Limo.jpg" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Rexus Daxa M84</h5>
+                            <p class="card-text text-white">
+                                Experience immersive gameplay with adaptive triggers, haptic feedback, and improved ergonomic design.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 1.100.000</p>
+                            <a href="https://www.playstation.com/en-id/accessories/dualsense-edge-wireless-controller/" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/enem.jpg" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Samsung 980 1TB</h5>
+                            <p class="card-text text-white">
+                                High-speed SSD storage that improves boot time, application loading, and overall system responsiveness.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 1.450.000</p>
+                            <a href="https://www.samsung.com/us/computing/memory-storage/980-ssd/" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25;">
+                        <img src="/gambar/Product/pitu.jpg" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">LG UltraGear 24GN60R</h5>
+                            <p class="card-text text-white">
+                                24-inch gaming monitor with high refresh rate and smooth visuals for immersive gaming and entertainment.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 2.399.000</p>
+                            <a href="https://www.lg.com/us/monitors/lg-24gn60r-b" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card p-4 mx-auto" style="width: 250px; background-color: #446b25; ">
+                        <img src="images/PSVR2.jpg" class="card-img-top" alt="..." style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">HyperX Cloud Stinger 2</h5>
+                            <p class="card-text text-white">
+                                Comfortable gaming headset with clear audio and microphone quality for gaming and communication.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 799.000</p>
+                            <a href="https://www.hyperx.com/products/hyperx-cloud-stinger-2" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content 2 end -->
+
+    <!-- Content 3 start -->
+    <section id="BestProduct" class="BestProduct" style="background-image: url('/gambar/BGBP.webp'); background-size:auto ; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h1 style="font-weight: bold; background-color: #7f0e0e; color: white;">BEST PRODUCT</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card p-4 mx-auto " style="width: 300px; background-color: #641692;">
+                        <img src="/gambar/BP1.png" class="card-img-top" alt="..." style="width: 260px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">ASUS ROG Strix G16</h5>
+                            <p class="card-text text-white"">
+                                Premium gaming laptop with top-tier performance, powerful GPU, and advanced cooling designed for serious gamers and creators.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 24.999.000</p>
+                            <a href="https://www.asus.com/laptops/rog-strix/rog-strix-g16/" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-4 mx-auto" style="width: 300px; background-color: #641692;">
+                        <img src="/gambar/BP2.png" class="card-img-top" alt="..." style="width: 250px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Apple MacBook Air M3</h5>
+                            <p class="card-text text-white">
+                                Apple’s latest ultraportable laptop delivering exceptional performance, all-day battery life, and a stunning Retina display. Perfect for professionals and students who need a reliable and powerful machine for work and creativity.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 18.999.000</p>
+                            <a href="https://www.apple.com/macbook-air-m3/" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-4 mx-auto" style="width: 300px; background-color: #641692;">
+                        <img src="/gambar/BP3.webp" class="card-img-top" alt="..." style="width: 250px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">Custom Gaming PC RTX 4060</h5>
+                            <p class="card-text text-white">
+                                A high-performance gaming PC equipped with RTX 4060 graphics card, delivering stunning visuals and smooth gameplay at high settings. Perfect for gamers who demand the best performance and aesthetics.
+                            </p>
+                            <p class="card-text text-white">Price: Rp 17.500.000</p>
+                            <a href="https://www.customgamingpc.com/rtx-4060" class="btn btn-primary d-block">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--yt-->
+    <div class="Video" id="Video" style="background-image: url('/assets/gaming.jpg'); background-size: auto; background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col" align="center">
+            <h3 font-weight="bold" style="color: white; font-family: Arial, sans-serif; background-color: rgba(0, 0, 0, 0.7); padding: 10px;">PRODUCT BUILD</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m7b_nqXqOHA?si=EchvUAlB6d0aQdrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+          </div>
+    </div>
+
+
+    <!-- Team-->
+    <section class="page-section bg-light" id="partners" style="background-image: url('/assets/whiteg.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase" style="font-family: 'Courier New', Courier, monospace, font-weight: bold;">Our Amazing Partners</h2>
+          <h3 class="section-subheading">
+            We are proud to collaborate with these esteemed partners who share our commitment to excellence and innovation.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="img-fluid d-block mx-auto rounded-circle"
+                src="/assets/Intel.jpg"
+                alt=""
+              />
+              <h4>intel</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="img-fluid d-block mx-auto rounded-circle"
+                src="/assets/amd.png"
+                alt=""
+              />
+              <h4>AMD</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="img-fluid d-block mx-auto rounded-circle"
+                src="/assets/NVIDIA.png"
+                alt=""
+              />
+              <h4>NVIDIA</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+        </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large">
+              Our partners are integral to our success, providing expertise, resources, and support that enable us to deliver exceptional products and services to our customers. We value these relationships and look forward to continued collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-muted">
+            Have questions or need assistance? Reach out to us, and our dedicated team will be happy to help you with any inquiries or support you may require.
+          </h3>
+        </div>
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name *"
+                  required="required"
+                  data-validation-required-message="Please enter your name."
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  required="required"
+                  data-validation-required-message="Please enter your email address."
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group mb-md-0">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone *"
+                  required="required"
+                  data-validation-required-message="Please enter your phone number."
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.2617940944032!2d109.68027843604949!3d-6.864028854017015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70250036300963%3A0xae736cf8f56eeacc!2sTambal%20Ban%20motor%20%26%20Sepeda%20Pak%20Amat!5e0!3m2!1sid!2sid!4v1781787071619!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <div id="success"></div>
+            <button
+              class="btn btn-primary btn-xl text-uppercase"
+              id="sendMessageButton"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4" style="background-color: #414f15;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-left text-white">Copyright ©Muhammad Faqih</div>
+          <div class="col-lg-4 my-3 my-lg-0">
+          </div>
+          <div class="col-lg-4 text-lg-right">
+            <a class="btn btn-dark btn-social mx-2" href="https://x.com/Faquith_"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/faqih.babai.31/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/faquith_/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
